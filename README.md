@@ -37,34 +37,63 @@
 
 |   Concept   |         Description or short answer         |
 |     ---     |                     ---                     |
-|What is the purpose of having different environments?     |(enter description or short answer here)|
-|What is the default package manager in Python?            |(enter description or short answer here)|
-|How do you manage environments and packages in Anaconda?  |(enter description or short answer here)|
-|`conda list`       |(enter description or short answer here)|
-|`conda env list`       |(enter description or short answer here)|
+|What is the purpose of having different environments?     |(To be able to format different enviornments for specific goals without haveing multiple computers)|
+|What is the default package manager in Python?            |(pip)|
+|How do you manage environments and packages in Anaconda?  |(conda activate (env name or conda install numpy ))|
+|`conda list`       |(# Name                    Version                   Build  Channel
+blas                      1.0                         mkl
+ca-certificates           2020.7.22                     0
+certifi                   2020.6.20                py38_0
+intel-openmp              2020.2                      254
+mkl                       2020.2                      256
+mkl-service               2.3.0            py38hb782905_0
+mkl_fft                   1.1.0            py38h45dec08_0
+mkl_random                1.1.1            py38h47e9c7a_0
+numpy                     1.19.1           py38h5510c5b_0
+numpy-base                1.19.1           py38ha3acd2a_0
+openssl                   1.1.1g               he774522_1
+pip                       20.2.2                   py38_0
+python                    3.8.5                he1778fa_0
+setuptools                49.6.0                   py38_0
+six                       1.15.0                     py_0
+sqlite                    3.33.0               h2a8f88b_0
+vc                        14.1                 h0510ff6_4
+vs2015_runtime            14.16.27012          hf0eaf9b_3
+wheel                     0.35.1                     py_0
+wincertstore              0.2                      py38_0
+zlib                      1.2.11               h62dcd97_4)|
+|`conda env list`       |((da35) C:\Users\talma>conda env list
+# conda environments:
+#
+base                     C:\Users\talma\anaconda3
+ai37                     C:\Users\talma\anaconda3\envs\ai37
+da35                  *  C:\Users\talma\anaconda3\envs\da35)|
 |How do you keep your base environment unchanged?       |(enter description or short answer here)|
-|What is the link to the Conda cheat sheet? (link in video notes is broken)      |(enter description or short answer here)|
-|`conda create --name XXXX`       |(enter description or short answer here)|
-|`source activate XXXX`       |(enter description or short answer here)|
-|`conda install YYYY`       |(enter description or short answer here)|
-|channels in Conda       |(enter description or short answer here)|
-|`conda install -c ZZZZ YYYY`       |(enter description or short answer here)|
-|`conda config --show channels`       |(enter description or short answer here)|
-|`conda config --add channels ZZZZ`       |(enter description or short answer here)|
+|What is the link to the Conda cheat sheet? (link in video notes is broken)      |(https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)|
+|`conda create --name XXXX`       |(creates an enviornment)|
+|`source activate XXXX`       |(switches between enviornments)|
+|`conda install YYYY`       |(installs packages)|
+|channels in Conda       |(locations where packages are stored)|
+|`conda install -c ZZZZ YYYY`       |(install a package through a specific channel)|
+|`conda config --show channels`       |(Shows a list of channels)|
+|`conda config --add channels ZZZZ`       |(adds a channel to the env you are in)|
 |conda-forge.org       |(enter description or short answer here)|
-|`source deactivate`       |(enter description or short answer here)|
+|`source deactivate`       |(deactivate current env)|
 |`conda config --get channels`       |(enter description or short answer here)|
 
 * After creating the environments he created in the video on your computer, what would the results of running the command `conda env list` look like with the da35 environment activated. Paste the output from your command prompt in the code block below.
 
 ```
 #Paste your results here.
-
+base                  *  C:\Users\talma\anaconda3
+ai37                     C:\Users\talma\anaconda3\envs\ai37
+da35                     C:\Users\talma\anaconda3\envs\da35
 
 ```
 * What command would you use to remove the environments you created for this exercise from your computer?
 
 ```
 #Type the command here.
-
+conda env remove --name myenv
 ```
+
