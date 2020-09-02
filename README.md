@@ -40,28 +40,7 @@
 |What is the purpose of having different environments?     |(To be able to format different enviornments for specific goals without haveing multiple computers)|
 |What is the default package manager in Python?            |(pip)|
 |How do you manage environments and packages in Anaconda?  |(conda activate (env name or conda install numpy ))|
-|`conda list`       |(# Name                    Version                   Build  Channel
-blas                      1.0                         mkl
-ca-certificates           2020.7.22                     0
-certifi                   2020.6.20                py38_0
-intel-openmp              2020.2                      254
-mkl                       2020.2                      256
-mkl-service               2.3.0            py38hb782905_0
-mkl_fft                   1.1.0            py38h45dec08_0
-mkl_random                1.1.1            py38h47e9c7a_0
-numpy                     1.19.1           py38h5510c5b_0
-numpy-base                1.19.1           py38ha3acd2a_0
-openssl                   1.1.1g               he774522_1
-pip                       20.2.2                   py38_0
-python                    3.8.5                he1778fa_0
-setuptools                49.6.0                   py38_0
-six                       1.15.0                     py_0
-sqlite                    3.33.0               h2a8f88b_0
-vc                        14.1                 h0510ff6_4
-vs2015_runtime            14.16.27012          hf0eaf9b_3
-wheel                     0.35.1                     py_0
-wincertstore              0.2                      py38_0
-zlib                      1.2.11               h62dcd97_4)|
+|`conda list`       |(lis of packages in conda|
 |`conda env list`       |((da35) C:\Users\talma>conda env list
 # conda environments:
 #
